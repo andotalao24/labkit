@@ -1,0 +1,16 @@
+# Allowlist: ignore everything, then re-include only the code and docs.
+# Keeps .env, logs/, extractions/ (benchmark data + ground truth), images/, data/ out of git.
+/*
+!/.gitignore
+!/README.md
+!/CLAUDE.md
+!/pyproject.toml
+!/.env.example
+!/src/
+!/tasks/
+!/scripts/
+
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
